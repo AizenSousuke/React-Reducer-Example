@@ -37,9 +37,11 @@ Posts.propTypes = {
 	newPost: PropTypes.object,
 };
 
+// called every time the store state changes. It receives the entire store state, and should return an object of data this component needs.
 const mapStateToProps = (state) => ({
 	posts: state.posts.items,
 	newPost: state.posts.item,
 });
 
+// React Redux provides a connect function for you to connect your component to the store.
 export default connect(mapStateToProps, { fetchPosts })(Posts);
