@@ -27,7 +27,7 @@ class PostForm extends Component {
 			title: this.state.title,
 			body: this.state.body,
 		};
-
+		
 		// Call action
 		this.props.createPost(post);
 	}

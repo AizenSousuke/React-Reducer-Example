@@ -8,6 +8,7 @@ import store from "./store";
 
 function App() {
 	return (
+		// Use the redux store in the app
 		<Provider store={store}>
 			<div className="App">
 				<header className="App-header">

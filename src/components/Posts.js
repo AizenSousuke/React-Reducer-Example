@@ -10,7 +10,7 @@ class Posts extends Component {
     
     componentWillReceiveProps(nextProps) {
         if (nextProps.newPost) {
-            // Add to the beginning
+            // Add new post to the beginning
             this.props.posts.unshift(nextProps.newPost);
         }
     }
